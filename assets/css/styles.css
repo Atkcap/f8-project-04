@@ -75,7 +75,7 @@ img {
 
 .section-heading {
     color: var(--color-bold);
-    font-family: Sora;
+    font-family: Sora, sans-serif;
 }
 
 .h1 {
@@ -243,7 +243,7 @@ img {
 
 .hero-item-info__title {
     color: #181e52;
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1;
@@ -349,7 +349,7 @@ img {
 .section__title {
     margin-bottom: 15px;
     color: #5e6085;
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-weight: 600;
 }
 
@@ -454,7 +454,7 @@ img {
 
 .about-media-info__number {
     color: #fff;
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 4.2rem;
     font-weight: 700;
     line-height: 1;
@@ -568,7 +568,7 @@ img {
 
 .about-content-item__title {
     color: #48496a;
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1;
@@ -693,7 +693,7 @@ img {
     column-gap: 6px;
     margin-top: 24px;
     color: #34396a;
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 1.2rem;
     line-height: 1;
 }
@@ -806,7 +806,7 @@ img {
 
 .team-info__name {
     color: var(--color-bold);
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 2.2rem;
     font-weight: 600;
 }
@@ -839,42 +839,51 @@ img {
 
 .pricing__btn {
     position: relative;
-    display: flex;
     margin: 38px 0;
     padding: 0;
-    border-color: var(--primary-color);
+    border-color: #ff5b2e99;
     background: transparent;
-    cursor: pointer;
 }
 
 .pricing__btn:hover {
     opacity: 1;
-}
-
-.pricing-btn__choice:hover {
-    opacity: 0.7;
+    cursor: pointer;
 }
 
 .pricing-btn__choice {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    column-gap: 80px;
     color: var(--primary-color);
     font-family: poppins, sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
-    padding: 14.5px 40px;
+    padding: 15.5px 40px;
 }
 
-.choice-active {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-}
-
-.choice-active::after {
+.pricing-btn__choice::before {
+    content: "";
     position: absolute;
-    inset: -1px 0;
+    inset: 0 0 0 50%;
     z-index: -1;
     border-radius: 99px;
     background: var(--primary-color);
+    transition: left 0.25s, right 0.25s;
+}
+
+.pricing-input:not(:checked) + .pricing-btn__choice::before {
+    left: 0;
+    right: 47.5%;
+}
+
+.pricing-input:checked
+    + .pricing-btn__choice
+    .pricing-choice__value:nth-child(2),
+.pricing-input:not(:checked)
+    + .pricing-btn__choice
+    .pricing-choice__value:nth-child(1) {
+    color: #fff;
 }
 
 .pricing__btn::after {
@@ -911,7 +920,7 @@ img {
 .choice-item__title {
     margin: 8px 0 24px;
     color: #3f4065;
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -919,7 +928,7 @@ img {
 .choice-item__price {
     margin-bottom: 22px;
     color: var(--color-bold);
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 3.4rem;
     font-weight: 700;
 }
@@ -1054,7 +1063,7 @@ img {
     display: flex;
     align-items: center;
     color: #282828;
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -1165,7 +1174,7 @@ img {
 
 .blog-item-img__time {
     color: #fff;
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 1.4rem;
     line-height: 1.21;
 }
@@ -1247,7 +1256,7 @@ img {
 .footer-left__title {
     margin-bottom: 16px;
     color: var(--color-bold);
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.11;
@@ -1286,7 +1295,7 @@ img {
 .footer-right__title {
     margin-bottom: 14px;
     color: var(--color-bold);
-    font-family: Sora;
+    font-family: Sora, sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.11;

@@ -595,9 +595,19 @@
                         </p>
                     </div>
                     <button class="btn pricing__btn">
-                        <p class="pricing-btn__choice">Monthly</p>
-                        <p class="pricing-btn__choice choice-active">Yearly</p>
+                        <input
+                            type="checkbox"
+                            name="Monthly"
+                            id="Monthly"
+                            class="pricing-input"
+                            hidden
+                        />
+                        <label for="Monthly" class="pricing-btn__choice">
+                            <span class="pricing-choice__value">Monthly</span>
+                            <span class="pricing-choice__value">Yearly</span>
+                        </label>
                     </button>
+
                     <ul class="pricing-choice__list">
                         <!-- Day Care -->
                         <li class="pricing-choice__item">
