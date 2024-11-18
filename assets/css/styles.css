@@ -23,6 +23,7 @@ textarea {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
+    outline: none;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -1223,6 +1224,11 @@ img {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.17;
+    caret-color: var(--primary-color);
+}
+
+.footer-input__email:focus {
+    border-color: var(--primary-color);
 }
 
 .footer__submit-btn {
