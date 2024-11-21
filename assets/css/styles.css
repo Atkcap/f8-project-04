@@ -95,7 +95,6 @@ img {
     margin-bottom: 18px;
     font-size: 2.2rem;
     font-weight: 600;
-    line-height: 1;
 }
 
 .line-clamp {
@@ -134,7 +133,6 @@ img {
     color: #5e6085;
     font-size: 1.4rem;
     font-weight: 500;
-    line-height: 1;
 }
 
 .navbar-list__item-active a,
@@ -149,7 +147,6 @@ img {
     color: var(--color-bold);
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 1;
 }
 
 /* ======= Hero ======= */
@@ -246,7 +243,6 @@ img {
     font-family: Sora, sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 1;
 }
 
 .skeleton {
@@ -372,7 +368,6 @@ img {
     color: #48496a;
     font-size: 1.8rem;
     font-weight: 500;
-    line-height: 1;
 }
 
 .about-content-list__item::before,
@@ -457,7 +452,6 @@ img {
     font-family: Sora, sans-serif;
     font-size: 4.2rem;
     font-weight: 700;
-    line-height: 1;
 }
 
 .about-media-info__sub {
@@ -571,7 +565,6 @@ img {
     font-family: Sora, sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
-    line-height: 1;
 }
 
 .about-content-item__desc {
@@ -587,7 +580,6 @@ img {
     padding-bottom: 5px;
     color: #ff5d31;
     font-weight: 500;
-    line-height: 1;
 }
 
 .about-content-item__link::after {
@@ -695,7 +687,6 @@ img {
     color: #34396a;
     font-family: Sora, sans-serif;
     font-size: 1.2rem;
-    line-height: 1;
 }
 
 .services-item__link:hover {
@@ -1231,19 +1222,8 @@ img {
 
 /* ======= Footer ======= */
 .footer {
-    position: relative;
     margin-top: 50px;
-}
-
-.footer__left::after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    content: "";
-    width: 42.7%;
-    background-color: #fff6ed;
+    background: linear-gradient(to right, #fff6ed 42.7%, transparent 42.7%);
 }
 
 .footer__email {
@@ -1252,7 +1232,7 @@ img {
 
 .footer-input__email {
     margin: 35px 0 68px;
-    padding: 16px 22px;
+    padding: 22px 68px 22px 16px;
     min-width: 268px;
     height: 46px;
     border-radius: 23px;
